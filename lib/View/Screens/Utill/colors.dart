@@ -6,4 +6,5 @@ class UtilColors {
   static const Color appbarcolor = Color(0xFFFFFFFF);
   static const Color textblack = Colors.black;
   static const Color whitecolor = Colors.white;
+  static const Color packagecolor = Color(0xFFFFE67A);
 }

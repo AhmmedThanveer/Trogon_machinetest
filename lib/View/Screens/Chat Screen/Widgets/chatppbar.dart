@@ -9,9 +9,20 @@ class ChatAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       backgroundColor: Colors.white, // Replace with your desired color
-      leading: IconButton(
-        onPressed: () {},
-        icon: const Icon(Icons.close),
+      actions: [
+        IconButton(onPressed: () {}, icon: Icon(Icons.more_vert_outlined))
+      ],
+      leading: Padding(
+        padding: const EdgeInsets.only(left: 10),
+        child: IconButton(
+          style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.white,
+              shape: CircleBorder(side: BorderSide(color: Colors.grey))),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(Icons.close),
+        ),
       ),
       title: Row(
         children: [

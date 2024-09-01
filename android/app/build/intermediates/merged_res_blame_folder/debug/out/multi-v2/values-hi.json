@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.trogon_machinetest.app-mergeDebugResources-11:/values-hi/values-hi.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\than\\.gradle\\caches\\transforms-3\\ce0205bc6a3c2ae7a91cc817aa7493e8\\transformed\\core-1.8.0\\res\\values-hi\\values-hi.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    }
+                }
+            ]
+        }
+    ]
+}

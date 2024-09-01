@@ -27,9 +27,8 @@ class _ChatScreenState extends State<ChatScreen> {
       appBar: const ChatAppBar(),
       body: Column(
         children: [
-          Chatmesagelist(),
-          if (_bottomNavIndex ==
-              0) // Show the text field when the first icon is selected
+          const Chatmesagelist(),
+          if (_bottomNavIndex == 0)
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: TextField(
@@ -55,9 +54,11 @@ class _ChatScreenState extends State<ChatScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        shape: CircleBorder(),
+        elevation: 3,
+        shape: const CircleBorder(
+            side: BorderSide(color: UtilColors.primarycolor)),
         backgroundColor: UtilColors.primarycolor,
-        child: Image(image: AssetImage('assets/images/chatlogo.png')),
+        child: const Image(image: AssetImage('assets/images/chatlogo.png')),
         onPressed: () {
           // Handle button press
         },
@@ -76,7 +77,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 context,
                 MaterialPageRoute(
                     builder: (context) =>
-                        Flashcardscreen()), // Replace HomeScreen with your home page widget
+                        FlashCardScreen()), // Replace HomeScreen with your home page widget
               );
             } else {
               _bottomNavIndex = index;
